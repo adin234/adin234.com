@@ -21,6 +21,7 @@
 		<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/bootstrap.css" />
 		<link rel="stylesheet" href="css/index.css" />
+		<link rel="shortcut icon" href="images/favicon.png">
 	</head>
 	<body class="theme-invert">
 		<nav class="mainmenu">
