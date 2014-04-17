@@ -53,6 +53,7 @@
 		<link rel="stylesheet" href="css/bootstrap.css" />
 		<link rel="stylesheet" href="css/index.css" />
 		<link rel="shortcut icon" href="images/favicon.png">
+		<title>Aldrin Bautista(adin234)</title>
 	</head>
 	<body class="theme-invert">
 		<nav class="mainmenu">
@@ -64,6 +65,7 @@
 						<li><a href="#home" class="active">Welcome</a></li>
 						<li><a href="#about">About me</a></li>
 						<li><a href="#works">Works</a></li>
+						<li><a href="#contact">Contact Me</a></li>
 					</ul>
 				</div>
 			</div>
@@ -80,6 +82,23 @@
 							Computer Science. UPLB. Free. Student Leader<br/>
 							KDCI. &lt;OpenovateLabs/&gt;. any.TV
 						</span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section" id="contact">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 text-center">
+						<a href="http://ph.linkedin.com/pub/aldrin-bautista/6a/372/354/"><i class="fa fa-linkedin fa-4x"></i></a>
+						<a href="https://github.com/adin234"><i class="fa fa-github fa-4x"></i></a>
+						<a href="http://gplus.to/adin234"><i class="fa fa-google-plus fa-4x"></i></a>
+						<a href="https://www.facebook.com/adin234"><i class="fa fa-facebook fa-4x"></i></a>
+						<a href="skype:adin234?call"><i class="fa fa-skype fa-4x"></i></a>
+						<a href="http://adin234.tumblr.com/"><i class="fa fa-tumblr fa-4x"></i></a>
+						<a href="http://www.twitter.com/adin234"><i class="fa fa-twitter fa-4x"></i></a>
+						<a href="mailto:adinbautista@gmail.com"><i class="fa fa-envelope fa-4x"></i></a>
 					</div>
 				</div>
 			</div>

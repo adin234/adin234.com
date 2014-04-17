@@ -106,17 +106,6 @@ body {
 	padding:10px 8px 10px 12px;
 }
 
-/*section*/
-@media (min-width: 768px) {
-	.section { 
-		padding-top: 160px;
-	}
-}
-
-section.section {
-	display: none;
-}
-
 /* home */
 #home .heading {
 	color: #ffffff;
@@ -265,6 +254,15 @@ section.section {
 	height: 375px;
 }
 
+/* contact */
+#contact {
+	padding-top: 160px;
+}
+#contact a {
+	display: inline-block;
+	margin-right: 16px;
+}
+
 /* global */
 .heading, .subheading {
 	font-weight: bold;
@@ -272,7 +270,19 @@ section.section {
 	color: #ffffff;
 }
 
+/*section*/
+@media (min-width: 768px) {
+	.section { 
+		padding-top: 160px;
+	}
+	#contact {
+		padding-top: 250px;
+	}
+}
 
+section.section {
+	display: none;
+}
 
 
 
