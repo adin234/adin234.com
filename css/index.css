@@ -175,19 +175,20 @@ section.section {
 }
 
 #about .skill-container {
-	float: left;
+	display: inline-block;
+	margin-right: -5px;
+	margin-bottom: 3px;
 }
 
 #about .skill {
 	background-color: rgb(240, 240, 240);
 	border-radius: 0 2px 2px 0;
 	color: #5c5c5c;
-	display: block;
-	float: left;
+	display: inline-block;
 	font-size: 13px;
 	height: 24px;
 	line-height: 24px;
-	margin: 0;
+	margin: 0 0 0 -4px;
 	padding: 0 13px;
 	position: relative;
 	text-align: left;
@@ -196,18 +197,14 @@ section.section {
 	zoom: 1;
 }
 
-#about .skill-container {
-	margin-top: 3px;
-}
-
 #about .skill-container > i {
-	width: 24px;
-	height: 24px;
-	float: left;
 	background-color: rgb(5, 93, 162);
 	border-radius: 2px 0 0 2px;
-	margin-left: 5px;
+	display: inline-block;
+	height: 24px;
 	line-height: 24px;
+	margin-left: 5px;
+	width: 24px;
 }
 
 #about p.description {

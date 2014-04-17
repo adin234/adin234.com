@@ -32,12 +32,29 @@
 					<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
 						<li><a href="#home" class="active">Welcome</a></li>
 						<li><a href="#about">About me</a></li>
+						<li><a href="#works">Works</a></li>
 					</ul>
 				</div>
 			</div>
 		</nav>
 
 		<section class="section" id="home" style="display:block">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 text-center">
+						<h1 class="heading">adin234</h1>
+						<h2 class="subheading">Full-stack Web Developer, Philippines</h2>
+						<span class="content">
+							Young. Undergraduate. Adventurous. Curious. Actor<br/>
+							Computer Science. UPLB. Free. Student Leader<br/>
+							KDCI. &lt;OpenovateLabs/&gt;. any.TV
+						</span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section" id="works">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 text-center">
