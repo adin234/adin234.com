@@ -140,7 +140,7 @@ section.section {
 	text-shadow: -1px -1px 0 rgba(255,255,255,.2), 1px -1px 0 rgba(255,255,255,.2), -1px 1px 0 rgba(255,255,255,.2), 1px 1px 0 rgba(255,255,255,.2);
 }
 
-.img-container {
+#about .img-container {
 	border-radius: 170px;
 	border: 2px solid white;
 	display: inline-block;
@@ -215,6 +215,52 @@ section.section {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 20px;
+}
+
+/* works */
+#works .project .img-container {
+	display: block;
+	padding: 5px;
+	border-radius: 5px;
+	background: #ffffff;
+	-webkit-box-shadow: 0px 6px 14px 0px rgba(0, 0, 0, 1);
+	-moz-box-shadow:    0px 6px 14px 0px rgba(0, 0, 0, 1);
+	box-shadow:         0px 6px 14px 0px rgba(0, 0, 0, 1);
+}
+
+#works .project .img-container img {
+	width: 100%;
+}
+
+#works .project .projectName {
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	display: -webkit-box;
+	font-size: 13px;
+	font-weight: bold;
+	height: 30px;
+	line-height: 15px;
+	overflow: hidden;
+	margin-top: 8px;
+	padding-left: 10px;
+	text-overflow: ellipsis;
+}
+
+#works .project .description {
+	height: 150px;
+	overflow: hidden;
+	text-align: justify;
+}
+
+#works .project .description:hover {
+	height: auto;
+	background: rgba(45, 45, 216, 0.7);
+	padding: 5px;
+	border-radius: 5px;
+}
+
+#works .project {
+	height: 375px;
 }
 
 /* global */

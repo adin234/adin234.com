@@ -1,6 +1,37 @@
 <?php 
+	ini_set('memory_limit', '-1');
 	$accessToken = "AQWxKAOSgB9tDQcuaKS8qP2Gjrmi3J0-_BMYkuI8SVnsKS0n4GhFoJw4CtyHzuTZc4piZzLBzF29RKUIuAV1Fc5OAlShQ5Um-2GpNDcgDW6voYrk5akmS818kuewjx_jByW7fEYWOPGzvSaNqbqSgOVRh2G-muWVac58vNcqWvKOuCaAHSU";
 	$id = '245746288';
+	
+
+	require('lib/simple_html_dom.php');
+	$linkedin = file_get_html("http://ph.linkedin.com/pub/aldrin-bautista/6a/372/354");
+
+	//die(htmlentities($linkedin));
+	$test = $linkedin->find('.project');
+	$projects = array();
+	foreach ($test as $key => $value) {
+		$new = $value->find('h3 a');
+		if(isset($new[0])) {
+			preg_match("/.*\?url=(.+).*/", $new[0]->href, $matches);
+			$summary = $value->find('div p');
+			if(isset($summary[0])) {
+				$summary = ltrim($summary[0]->innertext);
+			} else {
+				$summary = '';
+			}
+
+			$link = explode('&', $matches[1]);
+			$link = $link[0];
+
+			$projects[] = array(
+				'link'		=> urldecode($link),
+				'name'		=> ltrim($new[0]->innertext),
+				'summary'	=> $summary
+			);
+		}
+	}
+
 	$basicInfo = file_get_contents("https://api.linkedin.com/v1/people/~:(id,first-name,last-name,positions,headline,location,summary,specialties,email-address,skills,educations,date-of-birth)?oauth2_access_token=$accessToken&format=json");
 	$basicInfo = json_decode($basicInfo, true);
 
@@ -57,14 +88,18 @@
 		<section class="section" id="works">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 text-center">
-						<h1 class="heading">adin234</h1>
-						<h2 class="subheading">Full-stack Web Developer, Philippines</h2>
-						<span class="content">
-							Young. Undergraduate. Adventurous. Curious. Actor<br/>
-							Computer Science. UPLB. Free. Student Leader<br/>
-							KDCI. &lt;OpenovateLabs/&gt;. any.TV
-						</span>
+					<div id="projects" class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 text-center">
+						<?php foreach($projects as $key =>  $project): ?>
+							<div class="project col-md-4 col-lg-4" style="z-index: <?php echo count($projects)-$key; ?>">
+								<a class="img-container" target="_blank" href="<?php echo $project['link']; ?>">
+									<img src="http://immediatenet.com/t/l?Size=1280x768&URL=<?php echo $project['link']; ?>" />
+								</a>
+								<a target="_blank" href="<?php echo $project['link']; ?>" class="projectName"><?php echo $project['name']; ?> </a>
+								<p class="description">
+									<?php echo $project['summary']; ?>
+								</p>
+							</div>
+						<?php endforeach; ?>
 					</div>
 				</div>
 			</div>
@@ -137,7 +172,8 @@
 		</section>
 		<script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="js/bootstrap.js"></script>
-		<script src="js/modernizer.js"></script>
+		<script type="text/javascript" src="js/modernizer.js"></script>
+		<script type="text/javascript" src="js/masonry.js"></script>
 		<script type="text/javascript" src="js/index.js"></script>
 	</body>
 </html>
