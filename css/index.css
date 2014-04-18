@@ -313,3 +313,11 @@ section.section {
 .text-shadows .mainmenu .dropdown-menu a:hover { 
 	text-shadow:none;
 }
+
+.content small {
+	font-size: 60%;
+	width: 1px;
+	height: 1px;
+	overflow:hidden;
+	display: inline-block;
+}

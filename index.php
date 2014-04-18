@@ -54,16 +54,6 @@
 		<link rel="stylesheet" href="css/index.css" />
 		<link rel="shortcut icon" href="images/favicon.png">
 		<title>Aldrin Bautista(adin234)</title>
-
-		<script>
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-			ga('create', 'UA-50160042-1', 'adin234.com');
-			ga('send', 'pageview');
-		</script>
 	</head>
 	<body class="theme-invert">
 		<nav class="mainmenu">
@@ -88,9 +78,10 @@
 						<h1 class="heading">adin234</h1>
 						<h2 class="subheading">Full-stack Web Developer, Philippines</h2>
 						<span class="content">
+							<small>Aldrin Bautista</small><br/>
 							Young. Undergraduate. Adventurous. Curious. Actor<br/>
 							Computer Science. UPLB. Free. Student Leader<br/>
-							KDCI. &lt;OpenovateLabs/&gt;. any.TV
+							KDCI. &lt;OpenovateLabs/&gt;. any.TV<br/>
 						</span>
 					</div>
 				</div>
@@ -204,5 +195,14 @@
 		<script type="text/javascript" src="js/modernizer.js"></script>
 		<script type="text/javascript" src="js/masonry.js"></script>
 		<script type="text/javascript" src="js/index.js"></script>
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-50160042-1', 'adin234.com');
+			ga('send', 'pageview');
+		</script>
 	</body>
 </html>
